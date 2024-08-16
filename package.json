@@ -1,5 +1,5 @@
 {
-  "name": "@mnedia/ngx-meteors",
+  "name": "@omnedia/ngx-meteors",
   "description": "A simple component library to create a container with an animated background.",
   "version": "1.0.0",
   "peerDependencies": {
