@@ -1,259 +1,265 @@
 .om-meteors {
-    --om-meteors-rotate: 215deg;
-    --om-meteors-color: #64748b;
-    --om-meteors-gradient-stops: var(--om-meteors-color), transparent;
+  --om-meteors-rotate: 215deg;
+  --om-meteors-color: #64748b;
+  --om-meteors-gradient-stops: var(--om-meteors-color), transparent;
 
-    position: relative;
-    max-width: 1300px;
+  position: relative;
+  max-width: 1300px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  .om-meteors-background {
+    pointer-events: none;
     overflow: hidden;
 
-    .om-meteors-background {
-        pointer-events: none;
-        overflow: hidden;
-
-        .om-meteor {
-            pointer-events: none;
-            position: absolute;
-            border-radius: 100%;
-            height: .155rem;
-            width: .155rem;
-            background-color: var(--om-meteors-color);
-            animation: om-meteor 5s linear infinite;
-            transform: translate(0, 0) rotate(var(--om-meteors-rotate)) skewX(0) skewY(0) scaleX(1) scaleY(1);
-        }
-
-        .om-meteor-tail {
-            pointer-events: none;
-            width: 50px;
-            height: 1px;
-            background-image: linear-gradient(to right, var(--om-meteors-gradient-stops));
-            transform: translateY(50%);
-        }
-
-        .om-meteor:nth-child(1) {
-            top: -5px;
-            left: 904px;
-            animation-delay: 0.960946s;
-            animation-duration: 5s;
-        }
-
-        .om-meteor:nth-child(2) {
-            top: -5px;
-            left: 15px;
-            animation-delay: 0.577314s;
-            animation-duration: 2s;
-        }
-
-        .om-meteor:nth-child(3) {
-            top: -5px;
-            left: 896px;
-            animation-delay: 0.876302s;
-            animation-duration: 4s;
-        }
-
-        .om-meteor:nth-child(4) {
-            top: -5px;
-            left: 11px;
-            animation-delay: 1.02547s;
-            animation-duration: 9s;
-        }
-
-        .om-meteor:nth-child(5) {
-            top: -5px;
-            left: 1246px;
-            animation-delay: 1.00664s;
-            animation-duration: 2s;
-        }
-
-        .om-meteor:nth-child(6) {
-            top: -5px;
-            left: 1124px;
-            animation-delay: 1.07951s;
-            animation-duration: 4s;
-        }
-
-        .om-meteor:nth-child(7) {
-            top: -5px;
-            left: 697px;
-            animation-delay: 0.630549s;
-            animation-duration: 6s;
-        }
-
-        .om-meteor:nth-child(8) {
-            top: -5px;
-            left: 650px;
-            animation-delay: 0.680757s;
-            animation-duration: 6s;
-        }
-
-        .om-meteor:nth-child(9) {
-            top: -5px;
-            left: 1083px;
-            animation-delay: 0.496591s;
-            animation-duration: 9s;
-        }
-
-        .om-meteor:nth-child(10) {
-            top: -5px;
-            left: 89px;
-            animation-delay: 1.14977s;
-            animation-duration: 5s;
-        }
-
-        .om-meteor:nth-child(11) {
-            top: -5px;
-            left: 936px;
-            animation-delay: 0.265988s;
-            animation-duration: 7s;
-        }
-
-        .om-meteor:nth-child(12) {
-            top: -5px;
-            left: 384px;
-            animation-delay: 0.659241s;
-            animation-duration: 2s;
-        }
-
-        .om-meteor:nth-child(13) {
-            top: -5px;
-            left: 920px;
-            animation-delay: 0.35714s;
-            animation-duration: 3s;
-        }
-
-        .om-meteor:nth-child(14) {
-            top: -5px;
-            left: 921px;
-            animation-delay: 0.900376s;
-            animation-duration: 8s;
-        }
-
-        .om-meteor:nth-child(15) {
-            top: -5px;
-            left: 1288px;
-            animation-delay: 0.677528s;
-            animation-duration: 6s;
-        }
-
-        .om-meteor:nth-child(16) {
-            top: -5px;
-            left: 71px;
-            animation-delay: 0.76433s;
-            animation-duration: 9s;
-        }
-
-        .om-meteor:nth-child(17) {
-            top: -5px;
-            left: 964px;
-            animation-delay: 0.703487s;
-            animation-duration: 6s;
-        }
-
-        .om-meteor:nth-child(18) {
-            top: -5px;
-            left: 460px;
-            animation-delay: 0.740804s;
-            animation-duration: 5s;
-        }
-
-        .om-meteor:nth-child(19) {
-            top: -5px;
-            left: 1068px;
-            animation-delay: 0.516052s;
-            animation-duration: 6s;
-        }
-
-        .om-meteor:nth-child(20) {
-            top: -5px;
-            left: 401px;
-            animation-delay: 1.15273s;
-            animation-duration: 2s;
-        }
-
-        .om-meteor:nth-child(21) {
-            top: -5px;
-            left: 1149px;
-            animation-delay: 0.513373s;
-            animation-duration: 3s;
-        }
-
-        .om-meteor:nth-child(22) {
-            top: -5px;
-            left: 1062px;
-            animation-delay: 1.09627s;
-            animation-duration: 6s;
-        }
-
-        .om-meteor:nth-child(23) {
-            top: -5px;
-            left: 88px;
-            animation-delay: 0.530075s;
-            animation-duration: 6s;
-        }
-
-        .om-meteor:nth-child(24) {
-            top: -5px;
-            left: 809px;
-            animation-delay: 0.722058s;
-            animation-duration: 5s;
-        }
-
-        .om-meteor:nth-child(25) {
-            top: -5px;
-            left: 714px;
-            animation-delay: 0.384404s;
-            animation-duration: 4s;
-        }
-
-        .om-meteor:nth-child(26) {
-            top: -5px;
-            left: 156px;
-            animation-delay: 0.804044s;
-            animation-duration: 2s;
-        }
-
-        .om-meteor:nth-child(27) {
-            top: -5px;
-            left: 357px;
-            animation-delay: 0.57745s;
-            animation-duration: 7s;
-        }
-
-        .om-meteor:nth-child(28) {
-            top: -5px;
-            left: 953px;
-            animation-delay: 0.964284s;
-            animation-duration: 3s;
-        }
-
-        .om-meteor:nth-child(29) {
-            top: -5px;
-            left: 1032px;
-            animation-delay: 0.571444s;
-            animation-duration: 7s;
-        }
-
-        .om-meteor:nth-child(30) {
-            top: -5px;
-            left: 552px;
-            animation-delay: 0.533919s;
-            animation-duration: 3s;
-        }
+    .om-meteor {
+      pointer-events: none;
+      position: absolute;
+      border-radius: 100%;
+      height: 0.155rem;
+      width: 0.155rem;
+      background-color: var(--om-meteors-color);
+      animation: om-meteor 5s linear infinite;
+      transform: translate(0, 0) rotate(var(--om-meteors-rotate)) skewX(0)
+        skewY(0) scaleX(1) scaleY(1);
     }
+
+    .om-meteor-tail {
+      pointer-events: none;
+      width: 50px;
+      height: 1px;
+      background-image: linear-gradient(
+        to right,
+        var(--om-meteors-gradient-stops)
+      );
+      transform: translateY(50%);
+    }
+
+    .om-meteor:nth-child(1) {
+      top: -5px;
+      left: 904px;
+      animation-delay: 0.960946s;
+      animation-duration: 5s;
+    }
+
+    .om-meteor:nth-child(2) {
+      top: -5px;
+      left: 15px;
+      animation-delay: 0.577314s;
+      animation-duration: 2s;
+    }
+
+    .om-meteor:nth-child(3) {
+      top: -5px;
+      left: 896px;
+      animation-delay: 0.876302s;
+      animation-duration: 4s;
+    }
+
+    .om-meteor:nth-child(4) {
+      top: -5px;
+      left: 11px;
+      animation-delay: 1.02547s;
+      animation-duration: 9s;
+    }
+
+    .om-meteor:nth-child(5) {
+      top: -5px;
+      left: 1246px;
+      animation-delay: 1.00664s;
+      animation-duration: 2s;
+    }
+
+    .om-meteor:nth-child(6) {
+      top: -5px;
+      left: 1124px;
+      animation-delay: 1.07951s;
+      animation-duration: 4s;
+    }
+
+    .om-meteor:nth-child(7) {
+      top: -5px;
+      left: 697px;
+      animation-delay: 0.630549s;
+      animation-duration: 6s;
+    }
+
+    .om-meteor:nth-child(8) {
+      top: -5px;
+      left: 650px;
+      animation-delay: 0.680757s;
+      animation-duration: 6s;
+    }
+
+    .om-meteor:nth-child(9) {
+      top: -5px;
+      left: 1083px;
+      animation-delay: 0.496591s;
+      animation-duration: 9s;
+    }
+
+    .om-meteor:nth-child(10) {
+      top: -5px;
+      left: 89px;
+      animation-delay: 1.14977s;
+      animation-duration: 5s;
+    }
+
+    .om-meteor:nth-child(11) {
+      top: -5px;
+      left: 936px;
+      animation-delay: 0.265988s;
+      animation-duration: 7s;
+    }
+
+    .om-meteor:nth-child(12) {
+      top: -5px;
+      left: 384px;
+      animation-delay: 0.659241s;
+      animation-duration: 2s;
+    }
+
+    .om-meteor:nth-child(13) {
+      top: -5px;
+      left: 920px;
+      animation-delay: 0.35714s;
+      animation-duration: 3s;
+    }
+
+    .om-meteor:nth-child(14) {
+      top: -5px;
+      left: 921px;
+      animation-delay: 0.900376s;
+      animation-duration: 8s;
+    }
+
+    .om-meteor:nth-child(15) {
+      top: -5px;
+      left: 1288px;
+      animation-delay: 0.677528s;
+      animation-duration: 6s;
+    }
+
+    .om-meteor:nth-child(16) {
+      top: -5px;
+      left: 71px;
+      animation-delay: 0.76433s;
+      animation-duration: 9s;
+    }
+
+    .om-meteor:nth-child(17) {
+      top: -5px;
+      left: 964px;
+      animation-delay: 0.703487s;
+      animation-duration: 6s;
+    }
+
+    .om-meteor:nth-child(18) {
+      top: -5px;
+      left: 460px;
+      animation-delay: 0.740804s;
+      animation-duration: 5s;
+    }
+
+    .om-meteor:nth-child(19) {
+      top: -5px;
+      left: 1068px;
+      animation-delay: 0.516052s;
+      animation-duration: 6s;
+    }
+
+    .om-meteor:nth-child(20) {
+      top: -5px;
+      left: 401px;
+      animation-delay: 1.15273s;
+      animation-duration: 2s;
+    }
+
+    .om-meteor:nth-child(21) {
+      top: -5px;
+      left: 1149px;
+      animation-delay: 0.513373s;
+      animation-duration: 3s;
+    }
+
+    .om-meteor:nth-child(22) {
+      top: -5px;
+      left: 1062px;
+      animation-delay: 1.09627s;
+      animation-duration: 6s;
+    }
+
+    .om-meteor:nth-child(23) {
+      top: -5px;
+      left: 88px;
+      animation-delay: 0.530075s;
+      animation-duration: 6s;
+    }
+
+    .om-meteor:nth-child(24) {
+      top: -5px;
+      left: 809px;
+      animation-delay: 0.722058s;
+      animation-duration: 5s;
+    }
+
+    .om-meteor:nth-child(25) {
+      top: -5px;
+      left: 714px;
+      animation-delay: 0.384404s;
+      animation-duration: 4s;
+    }
+
+    .om-meteor:nth-child(26) {
+      top: -5px;
+      left: 156px;
+      animation-delay: 0.804044s;
+      animation-duration: 2s;
+    }
+
+    .om-meteor:nth-child(27) {
+      top: -5px;
+      left: 357px;
+      animation-delay: 0.57745s;
+      animation-duration: 7s;
+    }
+
+    .om-meteor:nth-child(28) {
+      top: -5px;
+      left: 953px;
+      animation-delay: 0.964284s;
+      animation-duration: 3s;
+    }
+
+    .om-meteor:nth-child(29) {
+      top: -5px;
+      left: 1032px;
+      animation-delay: 0.571444s;
+      animation-duration: 7s;
+    }
+
+    .om-meteor:nth-child(30) {
+      top: -5px;
+      left: 552px;
+      animation-delay: 0.533919s;
+      animation-duration: 3s;
+    }
+  }
 }
 
 @keyframes om-meteor {
-    0% {
-        opacity: 1;
-        transform: rotate(var(--om-meteors-rotate)) translateX(0);
-    }
+  0% {
+    opacity: 1;
+    transform: rotate(var(--om-meteors-rotate)) translateX(0);
+  }
 
-    70% {
-        opacity: 1;
-    }
+  70% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0;
-        transform: rotate(var(--om-meteors-rotate)) translateX(-500px);
-    }
+  100% {
+    opacity: 0;
+    transform: rotate(var(--om-meteors-rotate)) translateX(-500px);
+  }
 }
