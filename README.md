@@ -1,5 +1,13 @@
 # ngx-meteors
 
+<a href="https://ngxui.com" target="_blank" style="display: flex;gap: .5rem;align-items: center;cursor: pointer; padding: 0 0 0 0; height: fit-content;">
+  <img src="https://ngxui.com/assets/img/ngxui-logo.png" style="width: 64px;height: 64px;">
+  <p style="font-weight: bold; padding: 0; margin: 0; font-size: 4rem">NGXUI</p>
+</a>
+
+This Library is part of the NGXUI ecosystem. <br>
+View all available components at https://ngxui.com
+
 `@omnedia/ngx-meteors` is an Angular library that adds a mesmerizing meteor shower animation effect to your components. The meteors fly across the screen in a configurable direction and color, creating a dynamic and engaging background effect for your Angular applications.
 
 ## Features
@@ -21,21 +29,23 @@ npm install @omnedia/ngx-meteors
 Import the `NgxMeteorsComponent` in your Angular module or component:
 
 ```typescript
-import { NgxMeteorsComponent } from '@omnedia/ngx-meteors';
+import {NgxMeteorsComponent} from '@omnedia/ngx-meteors';
 
 @Component({
   ...
-  imports: [
-    ...
-    NgxMeteorsComponent,
-  ],
+    imports:
+[
   ...
+    NgxMeteorsComponent,
+],
+...
 })
 ```
 
 Use the component in your template:
 
 ```html
+
 <om-meteors
   [meteorColor]="'#ffcc00'"
   [meteorRotation]="'225deg'"
@@ -48,6 +58,7 @@ Use the component in your template:
 ## API
 
 ```html
+
 <om-meteors
   [meteorColor]="meteorColor"
   [meteorRotation]="meteorRotation"
@@ -64,6 +75,7 @@ Use the component in your template:
 ## Example
 
 ```html
+
 <om-meteors
   [meteorColor]="'#00ffcc'"
   [meteorRotation]="'180deg'"
