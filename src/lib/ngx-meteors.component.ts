@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 
 @Component({
   selector: 'om-meteors',
@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
   imports: [CommonModule],
   templateUrl: "./ngx-meteors.component.html",
   styleUrl: "./ngx-meteors.component.scss",
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NgxMeteorsComponent {
   @Input("styleClass")
